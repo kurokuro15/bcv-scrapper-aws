@@ -13,7 +13,8 @@
     "standard": "17.0.0"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.35.3",
+    "@supabase/supabase-js": "1.35.3",
+    "aws-xray-sdk-core": "3.3.6",
     "playwright-aws-lambda": "0.8.0",
     "playwright-core": "1.22.2"
   },

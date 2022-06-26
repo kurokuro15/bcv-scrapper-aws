@@ -1,7 +1,8 @@
+const AWSXRay = require('aws-xray-sdk-core')
+AWSXRay.setContextMissingStrategy(() => {})
 const { createClient } = require('@supabase/supabase-js')
 const { scraper, insert, mapper } = require('./declarations.js')
 const { url, dbUrl, key } = require('./config.js')
-
 // inicializamos el cliente de supabase.
 const supabase = createClient(dbUrl, key)
 
@@ -12,3 +13,5 @@ exports.handler = async () => {
   const insertedData = await insert({ db: supabase, data: mappedData })
   return insertedData
 }
+
+AWSXRay.captureAsyncFuncion(exports.handler)

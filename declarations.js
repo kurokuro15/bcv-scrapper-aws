@@ -47,8 +47,9 @@ const insert = async ({ db, data }) => {
   * @returns {Promise<Currency[]>}
   */
 const scraper = async (url) => {
-  const browser = await playwright.launchChromium({ headless: true })
-  const page = await browser.newPage()
+  const browser = await playwright.launchChromium()
+  const context = await browser.newContext()
+  const page = await context.newPage()
   await page.goto(url)
   let dolar = await page.$('div#dolar strong')
   dolar = await dolar.textContent()
