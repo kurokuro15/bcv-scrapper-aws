@@ -1,0 +1,8 @@
+# Ignore node dependencies
+node_modules/
+
+# Ignore configuration of supabase
+config.js
+
+# Ignore state of package-lock.json
+package-lock.json

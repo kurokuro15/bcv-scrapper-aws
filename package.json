@@ -1,0 +1,25 @@
+{
+  "name": "bcv-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "17.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.35.3",
+    "playwright-aws-lambda": "0.8.0",
+    "playwright-core": "1.22.2"
+  },
+  "eslint": {
+    "extends": [
+      "standard"
+    ]
+  }
+}

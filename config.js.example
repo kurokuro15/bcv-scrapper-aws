@@ -1,0 +1,9 @@
+const SB_URL = 'supabase_url'
+const SB_SERVICE_KEY =
+  'service_key'
+const url = 'http://www.bcv.org.ve/'
+module.exports = {
+  url,
+  dbUrl: SB_URL,
+  key: SB_SERVICE_KEY
+}
