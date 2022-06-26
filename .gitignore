@@ -1,6 +1,9 @@
 # Ignore node dependencies
 node_modules/
 
+# ignore dist files
+*.zip
+
 # Ignore configuration of supabase
 config.js
 
