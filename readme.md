@@ -16,8 +16,8 @@ donde `SB_URL` será la url de acceso al proyecto de _supabase_ en donde el scra
 - Crear un archivo `layer.zip` con la siguiente estructura: 
 	~~~
 	layer.zip
-		└ nodejs/
-			└ node_modules/*
+	 └ nodejs/
+	  └ node_modules/*
 	~~~
 	_almacenando todas las dependencias de node_modules en dicho archivo `.zip`_
 - Crear un archivo `function.zip` donde se almacenará la lambda function:
